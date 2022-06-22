@@ -12,7 +12,8 @@ namespace PR5
         }
         public void Add(decimal val)
         {
-            Cent10Coin.AddMoney(val);
+            if(val == 10m)
+                Cent10Coin.AddMoney(val);
         }
         public int GetAmount()
         {
