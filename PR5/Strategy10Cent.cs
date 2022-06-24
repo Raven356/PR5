@@ -21,7 +21,7 @@ namespace PR5
         }
         public decimal GetSum()
         {
-            return Cent10Coin.GetSum();
+            return Cent10Coin.GetSum()/100;
         }
     }
 }

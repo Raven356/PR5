@@ -7,9 +7,6 @@ namespace PR5
 {
     class Bill : Money
     {
-        public decimal GetSum()
-        {
-            return Values.Sum();
-        }
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PR5
@@ -11,6 +12,11 @@ namespace PR5
         public void AddMoney(decimal val)
         {
             Values.Add(val);
+        }
+
+        public decimal GetSum()
+        {
+            return Values.Sum();
         }
 
     }

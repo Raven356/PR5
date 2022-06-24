@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PR5
 {
-    class Cent10Coin : Coin
+    class Cent10Coin : Money
     {
 
     }
