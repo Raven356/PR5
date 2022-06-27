@@ -12,9 +12,13 @@ namespace PR5
             CBill.AddMoney(val);
         }
 
-        public int GetAmount()
+        public void GetAmount()
         {
-            return CBill.Values.Count;
+            Print print = new Print();
+            foreach(var x in CBill.ConcreteBill())
+            {
+                print.PrintOnScreen($"Кількість {x.Key} банкнот - {x.Value.Count}");
+            }
         }
 
         public decimal GetSum()

@@ -13,9 +13,9 @@ namespace PR5
                 Cent5Coin.AddMoney(val);
         }
 
-        public int GetAmount()
+        public void GetAmount()
         {
-            return Cent5Coin.Values.Count;
+            new Print().PrintOnScreen($"Кількість - {Cent5Coin.Values.Count}");
         }
 
         public decimal GetSum()

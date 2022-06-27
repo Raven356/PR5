@@ -15,17 +15,23 @@ namespace PR5
             context.SetStrategy(new StrategyBill{ CBill = new Bill() });
             context.ExecuteAdd(100);
             context.ExecuteAdd(12);
-            print.PrintOnScreen($"Сума - {context.ExecuteSum()}\nКількість - {context.ExecuteAmount()}\n");
+            print.PrintOnScreen($"Сума - {context.ExecuteSum()}");
+            context.ExecuteAmount();
+
 
             context.SetStrategy(new Strategy10Cent{ Cent10Coin = new Cent10Coin()});
             context.ExecuteAdd(10);
-            print.PrintOnScreen($"Сума - {context.ExecuteSum()}\nКількість - {context.ExecuteAmount()}\n");
+            print.PrintOnScreen($"Сума - {context.ExecuteSum()}\n");
+            context.ExecuteAmount();
 
             context.SetStrategy(new Strategy5Cent { Cent5Coin = new Cent5Coin() });
             context.ExecuteAdd(5);
             context.ExecuteAdd(5);
             context.ExecuteAdd(5);
-            print.PrintOnScreen($"Сума - {context.ExecuteSum()}\nКількість - {context.ExecuteAmount()}\n");
+            print.PrintOnScreen($"Сума - {context.ExecuteSum()}\n");
+            context.ExecuteAmount();
+
+
         }
     }
 }

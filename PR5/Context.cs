@@ -23,9 +23,9 @@ namespace PR5
             return _moneyStrategy.GetSum();
         }
 
-        public int ExecuteAmount()
+        public void ExecuteAmount()
         {
-            return _moneyStrategy.GetAmount();
+            _moneyStrategy.GetAmount();
         }
     }
 }

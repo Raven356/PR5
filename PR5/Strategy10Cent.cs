@@ -15,9 +15,9 @@ namespace PR5
             if(val == 10m)
                 Cent10Coin.AddMoney(val);
         }
-        public int GetAmount()
+        public void GetAmount()
         {
-            return Cent10Coin.Values.Count;
+            new Print().PrintOnScreen($"Кількість - {Cent10Coin.Values.Count}");
         }
         public decimal GetSum()
         {

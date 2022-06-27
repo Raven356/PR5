@@ -8,6 +8,6 @@ namespace PR5
     {
         void Add(decimal val);
         decimal GetSum();
-        int GetAmount();
+        void GetAmount();
     }
 }
